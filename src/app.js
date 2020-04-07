@@ -91,7 +91,7 @@ app.post("/repositories/:id/like", (request, response) => {
 
   repositories[repositoryIndex].likes +=1
 
-  return response.json(repositories[repositoryIndex].likes)
+  return response.json(repositories[repositoryIndex])
 });
 
 module.exports = app;
